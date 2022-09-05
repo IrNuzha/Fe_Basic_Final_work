@@ -1,0 +1,79 @@
+/* common */
+.fl-center {
+    display: flex;
+    justify-content: center;
+}
+
+.fl-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.container {
+    padding-top: $space;
+}
+
+.container-sm {
+    --bs-gutter-x: 0;
+    padding-top: 0;
+}
+
+.container-slider {
+    padding: $space $space 0 $space;
+    max-width: 250px;
+
+    @media screen and (min-width: $ex-sm) {
+        max-width: calc(315px + $space * 2);
+    }
+
+    @media screen and (min-width: $sm) {
+        max-width: calc(540px + $space * 2);
+    }
+
+    @media screen and (min-width: $tablet-md) {
+        max-width: $container-size-tbl;
+    }
+
+    @media screen and (min-width: $tablet) {
+        max-width: calc($container-size-tbl-md + $space * 2);
+    }
+
+    @media screen and (min-width: $tablet-hd) {
+        max-width: calc($container-size-tbl-hd + $space * 2);
+    }
+
+    @media screen and (min-width: $dt-sd) {
+        max-width: calc(1080px + $space * 2);
+    }
+
+    @media screen and (min-width: $dt) {
+        max-width: calc(1360px + $space * 2);
+    }
+}
+
+.container-footer {
+    max-width: 264px;
+    width: 100%;
+    background-color: $c-grey-bg;
+}
+
+.navbar-toggler {
+    justify-content: end;
+}
+
+.txt-gradient {
+    color: transparent;
+    background-clip: text;
+    background-image: $c-accent-red-text;
+}
+
+.txt-topic {
+    color: $c-active-regular;
+}

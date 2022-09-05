@@ -1,0 +1,151 @@
+/* theme */
+
+.theme-dark {
+    background: $gradient-supersoft;
+
+    .txt-active {
+        &:active {
+            color: $c-accent;
+        }
+    }
+
+    .txt-primary {
+        color: $c-white;
+    }
+
+    .txt-light {
+        color: $c-white;
+    }
+
+    .nav-txt {
+        color: $c-active-regular;
+
+        @media screen and (min-width: $sm) {
+            color: $c-white;
+        }
+    }
+
+    .border-txt {
+        border-bottom: 2px solid transparent;
+
+        &:hover {
+            transition: $transition;
+            background-color: $c-grey-separator;
+
+            @media screen and (min-width: $sm) {
+                background-color: transparent;
+                border-bottom-color: $c-white;
+            }
+        }
+
+        &:active {
+            color: $c-accent;
+
+            @media screen and (min-width: $sm) {
+                border-bottom-color: $c-accent;
+            }
+        }
+    }
+
+    .header {
+        &__selection::before {
+            background-color: $c-white;
+        }
+
+        &__grid-inner {
+            background: rgba(245, 245, 250, 0.2);
+
+            @media screen and (min-width: $sm) {
+                background: transparent;
+            }
+        }
+    }
+
+    .txt-contrast {
+        color: $c-white;
+
+        @media screen and (min-width: $tablet-md) {
+            background: transparent;
+            height: 47px;
+        }
+    }
+}
+
+.theme-light {
+    .txt-primary {
+        color: $c-black;
+    }
+
+    .txt-active {
+        &:active {
+            color: $c-accent;
+            transition: 0.3s ease;
+        }
+    }
+
+    .txt-light {
+        color: $c-grey-text;
+    }
+
+    .svg {
+        fill: $c-active-regular;
+    }
+
+    .txt-main-alt {
+        color: $c-alt;
+    }
+
+    .facebook-img {
+        fill: $c-grey-text;
+    }
+
+    .nav-txt {
+        color: $c-active-regular;
+    }
+
+    .border-txt {
+        border-bottom: 2px solid transparent;
+
+        &:hover {
+            transition: $transition;
+            background-color: $c-grey-separator;
+
+            @media screen and (min-width: $sm) {
+                background-color: transparent;
+                border-bottom-color: $c-white;
+            }
+        }
+
+        &:active {
+            color: $c-accent;
+
+            @media screen and (min-width: $sm) {
+                border-bottom-color: $c-accent;
+            }
+        }
+    }
+
+    .header {
+        &__selection::before {
+            background-color: $c-grey-separator;
+        }
+
+        &__logo-color {
+            fill: $c-main;
+        }
+
+        &__grid-inner {
+            background: $c-grey-bg;
+
+            @media screen and (min-width: $sm) {
+                background: transparent;
+            }
+        }
+    }
+
+    .txt-contrast {
+        color: $c-main;
+    }
+}
+
+/* end theme */

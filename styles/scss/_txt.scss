@@ -1,0 +1,55 @@
+/* txt */
+
+@mixin txt ($font-weight, $font-size, $line-height) {
+    font-weight: $font-weight;
+    font-size: $font-size;
+    line-height: $line-height;
+}
+
+.h1 {
+    @include txt (700, $h1, 46px);
+}
+
+.h2 {
+    @include txt (700, $h2, 37px);
+}
+
+.h2-lg {
+    @include txt (400, $h3-mob, 24px);
+
+    @media screen and (min-width: $sm) {
+        @include txt (400, $h2-lg, 44px);
+    }
+}
+
+.h3 {
+    @include txt (700, $h3, 27px);
+}
+
+.h3-caps-bold {
+    @include txt (700, $h3-caps, 17px);
+}
+
+.h3-caps {
+    @include txt (400, $h3-caps, 22px);
+}
+
+.h3-mob {
+    @include txt (400, $h3-mob, 24px);
+}
+
+.h4 {
+    @include txt (400, $h4, 30px);
+}
+
+.h6-bold {
+    @include txt (700, $h6, 19px);
+}
+
+.h6 {
+    @include txt (400, $h6, 19px);
+}
+
+.txt-sm {
+    @include txt (700, $txt-sm, 14px);
+}
