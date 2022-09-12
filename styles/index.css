@@ -503,9 +503,9 @@ body {
 }
 .main-section__btn:hover {
   opacity: 0.5;
-  border: 2px solid #F0145A;
+  border-color: #F0145A;
 }
-.main-section__btn-active:hover {
+.main-section__btn:hover .main-section__btn-active {
   stroke: #F0145A;
 }
 

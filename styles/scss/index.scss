@@ -215,11 +215,9 @@ body {
 
         &:hover {
             opacity: 0.5;
-            border: 2px solid $c-accent;
-        }
+            border-color: $c-accent;
 
-        &-active {
-            &:hover {
+            .main-section__btn-active {
                 stroke: $c-accent;
             }
         }
